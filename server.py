@@ -4796,8 +4796,8 @@ async def create_default_admin():
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
-    if __name__ == "__main__":
-    import os  # ✅ Correct indentation (4 spaces)
+    if __name__ == "__main__":    
+    import os
     port = int(os.environ.get("PORT", 8001))
     print(f"Starting server on port {port}")
     
